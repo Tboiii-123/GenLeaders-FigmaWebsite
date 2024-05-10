@@ -1,30 +1,62 @@
 
+/* A general styling to the website */
 *{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-body{
-    margin-bottom: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
+/* Ends here */
+
+
+/* Body of the website */
+
+
 .Top{
-    
+    padding-top: 20px;
     background-color: blanchedalmond;
-    border-bottom-left-radius:22%;
-    border-bottom-right-radius: 22%;
+    border-bottom-left-radius:17%;
+    border-bottom-right-radius: 17%;
+    
+}
+
+
+/* Nav bar */
+.topdesign{
+    cursor: pointer;
+}
+ .topdesign .Skilline{
+    font-weight: 1000px;
+    font-size: 23px;
+    margin-left: 40%;
+    position: relative;
+    /* Z-index is to make the text come forward on the object */
+    z-index: 2;
+
+}
+ .topdesign .diamond{
+    width: 60%;
+    height: 40px;
+    background-color:skyblue    ;
+    transform: rotate(34deg);
+    position: relative;
+    top: 40px;
+    left: 20px;
+    
 }
 
 
 li{
-    padding-left: 20px;
+    padding-left: 50px;
+    font-size: 17px;
 
-}
+  }
+  
+  
+/* Nav bar end */
 
 
-
-
-
+/* Button1 */
 .button1 {
     padding: 13px 40px;
     
@@ -35,6 +67,7 @@ li{
     
 }
 
+/* Button2 */
  .button2 {
     margin-left: 7px;
     padding: 13px 40px;
@@ -50,31 +83,40 @@ li{
 }
 
 
-
-.main{
+/* First Section */
+.section1{
     padding-top: 100px;
+    
     display: flex;
+    
     justify-content: space-evenly;
     height: 580px;
     
 }
-.main div {
+.section1 div {
     padding-left: 2%;
 }
 
 
-.main div #study{
+.section1 div #study{
     font-size: 40px;
     margin-bottom: 40px;
 }
+.section1 div p{
+    font-size: 23px;
+    margin-bottom: 40px;
+}
 
-.main div .inner{
+
+.section1 div .inner{
     display: flex;
     justify-content: center;
 }
-.main div .inner .join{
+
+.section1 div .inner .join{
     margin-top: 40px;
-    padding: 1px 40px;
+    width: 150px;
+    height:50px ;
     border-radius: 30px;
     font-size: 15px;
     border: none;
@@ -82,14 +124,15 @@ li{
     cursor: pointer;
 
 }
-.main div .inner p{
+.section1 div .inner p{
     margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
 .image1{
-    margin-top: -100px;
-    height: 500px;
+    margin-top: -70px;
+    
+    height: 550px;
     margin-left: -20px;
 }
 
@@ -97,83 +140,117 @@ li{
 @media(max-width:800px){
     
     .Top{
-    
+        
         background-color: blanchedalmond;
         border-bottom-left-radius:0%;
         border-bottom-right-radius:0%;
     }
     
     
-.main{
+.section1{
     padding-top: 100px;
     display: block;
-    height: 860px;
+    height: 1000px;
+    
+    
     
 }
 
-.main div {
+.section1 div {
     padding-left: 4%;
 }
 
 
-
-
-
 .image1{
+    margin-top: 110px;
+    height: 370px;
+}
+
+.section1 div .inner{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -20px;
+} 
+.section1 div .inner p{
     margin-top: 50px;
-    height: 310px;
+    font-size: 17px;
 }
 
 
+.section1 div .inner .join{
+    margin-top: 50px;
+    
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+
+} 
+
+
+
 }
+/* Ends here */
 
 
-/* Main2 */
 
-.Main2{
+
+
+/* Second Section*/
+
+.section2{
     margin-top: 100px;
     
 }
-.Main2 p{
+.section2 p{
     text-align: center;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     
 }
 
-.Main2 .images{
+.section2 .images{
     margin-left: 0%;
 }
 
-#image2{
+.section2 .images #image2{
     padding-top: 30px;
+    width: 100px;
 
 }
 
 
 
 @media(max-width:600px){
-    .Main2 .images{
+    .section2 .images{
         margin-left: 25%;
     }
-    #image2{
+    .section2 #image2{
         padding-top: 50px;
     
     }
     
 }
+/* Ends here */
 
-/* Main3 */
-.Main3{
+
+
+/* Third section*/
+
+.section3{
     margin-top: 100px;
     display: flex;
 }
 
-.Main3 #inner{
+.section3 #inner{
     border-radius: 20px;
     background-color:aliceblue;
     width: 32%;
-    height: 56vh;
+    height: 340px;
     padding: 0px 20px;
     text-align: center;
     margin-left: 1%;
@@ -181,24 +258,29 @@ li{
     
 }
 
-.Main3 #inner div img{
+.section3 #inner div img{
     margin-top: -11%;
     width: 30%;
 }
-.Main3 aside {
-    padding-top: 50px;
+
+.section3 #inner  aside{
+    font-size: 20px;
 }
+/* .Main3 aside {
+    padding-top: 50px;
+} */
+
  #bold{
     font-weight: 700;
 }
 
 @media(max-width:600px){
 
-    .Main3{
+    .section3{
         margin-top: 100px;
         display: block;
     }
-    .Main3 #inner{
+    .section3 #inner{
         margin-top: 50px;
         margin-left: 15%;
         border-radius: 20px;
@@ -214,49 +296,54 @@ li{
     
     
 }
+/* Ends here */
 
 
 
 
 
-/* Main4 */
+/* Fourth section  */
 
-.Main4{
+.section4{
     margin-top: 100px;
 
 }
-
-.Main4 p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 1000px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+.section4 #text{
+    width: 100%;
 }
-.Main4 #p{
-    padding: 0px 22%; 
+.section4  #text p{
+    text-align: center;
+   
+    font-size: 30px;
+
+    font-weight: 1000px;
+    line-height: 35px;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.section4 #text #p{
+    
     margin-top:50px;
     font-size: 20px;
     
 }
 
-.Main4 .image{
+.section4 .image{
     margin-top: 100px;
     
     display: flex;
     justify-content: center;
 }
 
-.Main4 .image .inner{
-    position: relative;
-    display: inline-block;
-}
-.Main4 .image div{
+
+.section4 .image div{
     position: relative;
     display: inline-block;
 }
 
-.Main4 .image .inner #image3{
+
+.section4 .image .inner #image3{
     height: 270px;
     width: 100%;
     padding-left: 50px;
@@ -264,7 +351,7 @@ li{
     
 }
 
-.Main4 .image  #image3{
+.section4 .image  #image3{
     height: 270px;
     width: 100%;
     padding-left: 50px;
@@ -275,17 +362,23 @@ li{
 
 /* Overlay1 part */
 
-.Main4 .image .inner .overlay{
+.section4 .image .inner .overlay{
     position: absolute;
     color: white;
     bottom: 100px;
     display: block;
-    margin-top: 28px;
-    margin-left: 30%;
-
+    text-align: center;
+    left: 30%;
     
 }
-.Main4 .image .inner .overlay button{
+
+
+.section4 .image .inner .overlay div p{
+    font-size: 20px;
+    
+}
+
+.section4 .image .inner .overlay button{
     
     background-color: rgb(255, 255, 255 ,0);
     color: white;
@@ -298,17 +391,23 @@ li{
 /* Overlay 2 part */
 
 
-.Main4 .image div .overlay2{
+.section4 .image div .overlay2{
     position: absolute;
-    color: white;
+    color: black;
     bottom: 100px;
-    display: block;
-    margin-top: 28px;
-    margin-left: 30%;
-
+    
+    text-align: center;
+    left: 30%;
+    color: white;
     
 }
-.Main4 .image div .overlay2 button{
+
+.section4 .image div .overlay2 p{
+    font-size: 20px;
+    
+}
+
+.section4 .image div .overlay2 button{
     
     background-color:skyblue;
     color: white;
@@ -320,80 +419,82 @@ li{
 
 
 @media(max-width:600px){
-    .Main4 #p{
+    .section4 #p{
         padding: 0px 10%; 
         margin-top:50px;
         font-size: 20px;
         
     }
     
-.Main4 .image{
+.section4 .image{
    
     display: block;
     
 }
 
     
-.Main4 .image .inner #image3{
+.section4 .image .inner #image3{
     height: 270px;
     width: 100%;
-    padding-left: 50px;
+    margin-left: -25px;
     display: block;
     
 }
 
-.Main4 .image  #image3{
+
+.section4 .image  #image3{
     margin-top: 30px;
     height: 270px;
     width: 100%;
-    padding-left: 50px;
+    margin-left: -25px;
     
     
 }
 
 
 }
+/* Ends here */
 
 
+/* Fifth Section */
 
-/* Main5 */
-
-.Main5{
+.section5{
     margin-top: 150px;
     display: flex;
     justify-content: center;
     margin-left: 5%;
 }
- .Main5 #text{
+ .section5 #text{
     margin-top: 5%;
     width: 47%;    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 } 
 
-.Main5 #text #bold{
+.section5 #text #bold{
     font-size: 20px;
 }
-.Main5 div #image4{
-    width: 100%;
+.section5 div #image4{
+    width: 80%;
     height: 80%;
 }
 
 
 @media(max-width:600px){
     
-.Main5{
+.section5{
     margin-top: 150px;
     display: block;
     
-    margin-left: 7%;
+    margin-left: 0%;
 }
- .Main5 #text{
+ .section5 #text{
     text-align: center;
     width: 100%;    
 } 
 
-.Main5 div #image4{
+.section5 div #image4{
     margin-top: 50px;
     width: 100%;
     height: 100%;
@@ -404,54 +505,67 @@ li{
 
 }
 
+/* Ends here */
 
-/* Main6 */
 
-.Main6{
+
+/* Sixth Section */
+
+.section6{
     margin-top: 150px;
     text-align: center;
 }
-.Main6 #our{
+.section6 #our{
     color: blue;
     font-size: 30px;
     font-weight: 1000px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     
 }
-.Main6 .inner{
+.section6 p{
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.section6 .inner{
     display: flex;
     justify-content: center;
     margin-top: 100px;
     margin-right: 3%;
 
 }
-.Main6 .inner #image5{
+.section6 .inner #image5{
     width: 70%;
 }
 
 
 @media(max-width:600px){
 
-     .Main6 .inner{
+     .section6 .inner{
         display: block;
-        margin-left: 7%;
+        margin-left: 1%;
      
     } 
     
-    .Main6 .inner #image5{
+    .section6 .inner #image5{
         margin-top: 50px;
         width: 90%;
         
     }
     
-    .Main6 .inner div{
+    .section6 .inner div{
         margin-top: 50px;
     }
 
 }
 
-/* Main7 */
-.Main7{
+/* Ends here */
+
+
+
+/* Seventh Section */
+.section7{
     margin-top: 150px;
     display: flex;
     justify-content: space-evenly;
@@ -459,60 +573,70 @@ li{
 }
 
 
-.Main7 div {
+.section7 #inner {
+    margin-top: 130px;
     width: 40%;
 }
 
-.Main7 div #tools{
+.section7 #inner #tools{
     color: blue;
     font-size: 30px;
     font-weight: 1000px;
     
 }
-.Main7 div p{
-    line-height: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+.section7 #inner p{
+    line-height: 30px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+
 }
 
-.Main7 div #image{
-    width: 100%;
+.section7 div #image{
+    width: 70%;
     
 }
-
 
 
 
 @media(max-width:600px){
-    .Main7{
+    .section7{
         margin-top: 150px;
         display: block;
         margin-left: 1%;
         
     }
     
-    .Main5 div #image4{
-        width: 100%;
-        height: 260px;
-    }
-    .Main7 div {
+    
+    .section7 #inner {
+        margin-top: 0px;
         text-align: center;
-        width: 90%;
+        width: 97%;
     }
+    
+.section7 div #image{
+    width: 100%;
+    margin-left: 1%;
+    
+}
     
     
 }
 
 
-/* Main8 */
-.Main8{
+/* Eight Section */
+.section8{
     margin-top: 150px;
     text-align: center;
     
 
 
 }
-.Main8 .inner{
+.section8 #text #bold{
+    font-weight: 300;
+    color: blue;
+}
+.section8 .inner{
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -520,14 +644,17 @@ li{
     
 }
 
-.Main8 .inner #text{
+.section8 .inner #text{
     width: 50%;
     margin-top: 10%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    
+
     
 }
 
-.Main8 .inner #image{
+.section8 .inner #image{
     width: 100%;
     height:400px ;
 }
@@ -539,21 +666,21 @@ li{
 @media(max-width:600px){
     
 
-.Main8 .inner{
+.section8 .inner{
     display: block;
     margin-top: 100px;
     margin-left: 7%;
     
 }
-.Main8 .inner #image{
+.section8 .inner #image{
     width: 300px;
     margin-top: 100px;
 }
 
-.Main8 .inner  div{
+.section8 .inner  div{
     margin-top: 100px;
 }
-.Main8 .inner #text{
+.section8 .inner #text{
     width: 100%;
 }
 
@@ -565,8 +692,8 @@ li{
 
 
 
-/* Main9 */
-.Main9{
+/* Nineth Section*/
+.section9{
     margin-top: 150px;
     display: flex;
     justify-content: space-evenly;
@@ -574,38 +701,72 @@ li{
 }
 
 
-.Main9 div {
+.section9 #text {
+    margin-top: 10%;
     width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
-.Main9 div #class{
+
+.section9 #text #class{
     font-size: 30px;
     font-weight: 1000px;
+    color: blue;
+    
+}
+.section9 #text  p{
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+}
+
+.section9 #text  #link{
+    color: black;
+    text-decoration:none;
+    font-size: 20px;
+
+    transition: 1.2s;
     
 }
 
-.Main9 div #image{
-    width: 70%;
+/* Hover  animation for the link */
+.section9 #text  #link:hover{
+    color: red;
+    font-size: 24px;
+
+    
+}
+
+.section9 div #image{
+    width: 90%;
     
 }
 
 
 
 @media(max-width:600px){
-    .Main9{
+    .section9{
         margin-top: 150px;
         display: block;
         margin-left: 3%;
         
     }
+    .section9 #text {
+        
+        width: 100%;
+        
+           
+    }
     
-    .Main9 div #image{
+    
+    .section9 div #image{
         width: 100%;
     }
 
-    .Main9 div {
+    .section9 div {
         text-align: center;
-        width: 80%;
+        width: 100%;
     }
     
     
@@ -615,29 +776,34 @@ li{
 
 
 
-/* Main10 */
-.Main10{
+/* Tenth Section  */
+.section10{
     margin-top: 150px;
     text-align: center;
     
 
 
 }
-.Main10 .inner{
+.section10 .inner{
     display: flex;
     justify-content: center;
     margin-top: 100px;
     margin-right: 3%;
     
 }
-.Main10 div #one{
+.section10 div #one{
     font-size: 30px;
     font-weight: 1000px;
     color: orange;
     
 }
-.Main10 .inner #image{
-    width: 90%;
+.section10 div p{
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.section10 .inner #image{
+    width: 70%;
 }
 
 
@@ -645,24 +811,26 @@ li{
 @media(max-width:600px){
     
 
-.Main10 .inner{
+.section10 .inner{
     display: block;
     margin-top: 100px;
     margin-left: 7%;
     
 }
-.Main10 .inner #image{
+.section10 .inner #image{
     width: 100%;
     margin-top: 100px;
 }
 
-.Main10 .inner  div{
+.section10 .inner  div{
     margin-top: 100px;
 }
 
 
 }
 /* Ends here */
+
+
 
 /* Button design */
 #see{
@@ -676,44 +844,53 @@ li{
     border-color: orange;
     background: white;
     border-radius: 20px;
+    transition: 2s;
 }
+
+#see button:hover{
+    background-color: orange;
+    color: white;
+}
+
 
 /* Ends here */
 
 
 
-
-/* Main11 */
-
-.Main11{
+/*Eleventh section  */
+ 
+.section11{
     margin-top: 150px;
     display: flex;
     
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-left: 10%;
 }
 
 
-.Main11 div {
-    width: 50%;
+.section11 div {
+    width: 40%;
 }
 
-.Main11 div p{
-    font-size: 17px;
-    font-weight: 1000px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section11 div p{
     
+    
+    font-weight: 1000px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
-.Main11 div #edu{
-    font-size: 25px;
-    font-weight: 1000px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section11 div #edu{
     
+    font-weight: 1000px;
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
     color: blue;
 }
 
 
-.Main11 div #image{
+.section11 div #image{
     
     width: 25%;
     
@@ -722,21 +899,21 @@ li{
 
 
 @media(max-width:600px){
-    .Main11{
+    .section11{
         margin-top: 150px;
         display: block;
         margin-left: 0%;
         
     }
     
-    .Main11 div #image{
+    .section11 div #image{
         width: 20%;
         
     }
-    .Main11 div{
+    .section11 div{
         margin-bottom: 70px;
     }
-    .Main11 div {
+    .section11 div {
         text-align: center;
         width: 100%;
     }
@@ -750,15 +927,17 @@ li{
 
 
 
-/* Main12 */
-.Main12{
+  
+/*Twelveth Section  */
+
+.section12{
     margin-top: 150px;
     text-align: center;
     
 
 
 }
-.Main12 .inner{
+.section12 .inner{
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
@@ -766,20 +945,23 @@ li{
     
 }
 
-.Main12 .inner div {
-    width: 30%;
+.section12 .inner #text {
+    width: 50%;
     
 }
 
 
-.Main12 .inner div #what{
+.section12 .inner #text #what{
     color: blue;
     font-size: 30px;
     font-weight: 1000px;
     
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    
 }
 
-.Main12 .inner #image{
+.section12 .inner #image{
     width: 100%;
     height:400px;
 }
@@ -788,23 +970,23 @@ li{
 @media(max-width:600px){
     
 
-.Main12 .inner{
+.section12 .inner{
     display: block;
     margin-top: 100px;
     margin-left: 7%;
     
 }
-.Main12 .inner div {
+.section12 .inner #text {
     width: 100%;
     
 }
 
-.Main12 .inner #image{
+.section12 .inner #image{
     width: 300px;
     margin-top: 100px;
 }
 
-.Main12 .inner  div{
+.section12 .inner  div{
     margin-top: 100px;
 }
 
@@ -817,49 +999,65 @@ li{
 
 /* Main13 */
 
-/* Main8 */
-.Main13{
+
+.section13{
     margin-top: 150px;
     text-align: center;
 
 }
-.Main13 #latest{
+.section13 #latest{
     font-weight: 1000px;
     font-size: 20px;
     color: blue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
-.Main13 .inner{
+.section13 .inner{
     display: flex;
     justify-content:space-around;
     margin-top: 100px;
     
 }
-.Main13 .inner  #innerfirst #image{
+.section13 .inner  #innerfirst #image{
     width: 60%;
     height: 200px;
 }
 
 
 
-.Main13 .inner  #innerfirst #text{
+.section13 .inner  #innerfirst #text{
     width: 20%;
     margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
 
-.Main13 .inner  #innerfirst #text button{
+.section13 .inner  #innerfirst #text button{
     padding: 5px 30px;
     background-color: orange;
     border-radius: 10px;
     margin-top: 30px;
+
+}
+.section13 .inner  #innerfirst #text #readmore{
+    color: blue;
+    text-decoration:none;
+    font-size: 20px;
+
+    transition: 1.2s;
+
 }
 
-.Main13 .inner #innersec #aside{
+.section13 .inner  #innerfirst #text #readmore:hover{
+    
+    font-size: 30px;
+    color: red;
+    
+}
+
+.section13 .inner #innersec #aside{
     display: flex;
     margin-bottom: 60px;
     
@@ -867,55 +1065,58 @@ li{
 }
 
 
-.Main13 .inner #innersec #aside div img{
-    width: 80%;
+.section13 .inner #innersec #aside div img{
+    width: 70%;
     
 }
 
-.Main13 .inner #innersec #aside #text{
-    width:100%;
+.section13 .inner #innersec #aside #text{
+    width:80%;
+    padding: 13px;
     margin-top: -20px;
     font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
 }
+
+
+    
 
 
 @media(max-width:600px){
     
 
-.Main13 .inner{
+.section13 .inner{
     display: block;
     margin-top: 100px;
     margin-left: 7%;
     
 }
-.Main13 .inner #image{
+.section13 .inner #image{
     width: 300px;
     height: 300px;
     margin-top: 0px;
 
 }
 
-.Main13 .inner  div{
+.section13 .inner  div{
     margin-top: 100px;
 }
-.Main13 .inner #text{
+.section13 .inner #text{
     width: 100%;
 }
 
-.Main13 .inner #innersec #aside{
+.section13 .inner #innersec #aside{
     display: block;
     
 }
 
-.Main13 .inner #innersec #aside div img{
+.section13 .inner #innersec #aside div img{
     width: 70%;
     margin-bottom: 50px;
 }
 
-.Main13 .inner #innersec #aside #text{
+.section13 .inner #innersec #aside #text{
     width: 90%;
     
 }
